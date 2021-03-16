@@ -48,13 +48,6 @@ or
 $ npm install
 ```
 
-Note: if you run into an pngquant-bin error on Windows try running:
-
-```
-npm install imagemin-pngquant@5.0.1 -D
-npm install pngquant-bin@3.1.1 -D
-```
-
 
 ## Usage
 
