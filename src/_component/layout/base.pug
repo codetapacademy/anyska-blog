@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title Anyska's Blog! 
+    meta(content="Anyska's Blog! &#8211; Anyska's Blog! &#8211; is super awesome" name="description")
+    meta(
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    )
+    if config.entry.css.embed
+      link(rel="stylesheet" href=`${embedPath}` embed)
+  body
+    .content
+      block awesome-content
+    if config.entry.css.external
+      link(rel="stylesheet", href=`${baseUrl}style.css`)
+
