@@ -19,3 +19,9 @@ body {
 a {
   text-decoration: none;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-gap: 16px;
+}
