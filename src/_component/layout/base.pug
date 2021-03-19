@@ -7,11 +7,11 @@ html(lang="en")
       name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     )
-    if config.entry.css.embed
-      link(rel="stylesheet" href=`${embedPath}` embed)
+    link(rel="stylesheet", href="style.css")
   body
     .content
-      block awesome-content
-    if config.entry.css.external
-      link(rel="stylesheet", href=`${baseUrl}style.css`)
+      .grid 
+        include _component/home-page/home-page.pug
+        include _component/menu/menu.pug
+   
 
