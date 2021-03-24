@@ -1,0 +1,30 @@
+.home__page {
+  grid-column: 2/3;
+}
+
+.home__page-header {
+  margin-top: 60px;
+}
+
+.home__page-title {
+  @extend %title;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #666;
+  }
+}
+
+.home__page-subtitle {
+  color: #333;
+  font-size: 1.563em;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.home__page-image {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
