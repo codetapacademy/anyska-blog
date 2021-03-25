@@ -1,4 +1,27 @@
 .menu {
-  grid-column: 1/2;
-  grid-row: 1/-1;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: fixed;
+  background-color: wheat;
+  left: 0;
+  width: 100%;
 }
+
+.menu__bar {
+  height: 50px;
+  padding: 10px 20px;
+  color: #666;
+  border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: auto;
+}
+
+.text {
+  margin-right: 10px;
+}
+
