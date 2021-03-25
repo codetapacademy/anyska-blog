@@ -2,7 +2,7 @@
   grid-column: 1/-1;
   grid-row: 1/2;
   position: fixed;
-  background-color: wheat;
+  background-color: white;
   left: 0;
   width: 100%;
 }
@@ -21,7 +21,13 @@
   width: auto;
 }
 
-.text {
+.menu__bar-text {
   margin-right: 10px;
+}
+
+.menu__bar-icon-menu {
+  .icon-menu{
+    font-size: 20px;
+  }
 }
 

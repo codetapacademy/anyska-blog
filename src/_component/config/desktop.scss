@@ -19,4 +19,20 @@
   .home__page {
     grid-column: 2/3;
   }
+
+  .menu__bar {
+    display: none;
+  }
+
+  .home__page-header {
+    margin-top: 60px;
+  }
+
+  .home__page-image {
+    margin-top: 80px;
+  }
+
+  .home__page-subtitle {
+    margin-bottom: 20px;
+  }
 }
