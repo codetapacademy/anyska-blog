@@ -1,5 +1,6 @@
+- var homePage=data.content.homePage
 .home__page
   .home__page-header
-    a(href="/").home__page-title Anyska's beauty diary
-    h2.home__page-subtitle Grab a cup of tea and let's chat beauty, shall we?
+    a(href="/").home__page-title=homePage.title
+    h2.home__page-subtitle=homePage.subtitle
   img(src="asset/image/home-page.png", alt="").home__page-image
