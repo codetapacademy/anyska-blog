@@ -14,14 +14,23 @@
   .menu {
     grid-column: 1/2;
     grid-row: 1/-1;
+    position: initial;
   }
-
+  
   .home__page {
     grid-column: 2/3;
+    grid-row: 1/-1;
   }
-
+  
   .menu__bar {
     display: none;
+  }
+  
+  .menu__content{ 
+    display: block;
+    background-color:white;
+    margin-top: 240px;
+    padding-top: 0;
   }
 
   .home__page-header {

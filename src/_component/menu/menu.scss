@@ -9,7 +9,6 @@
 
 .menu__bar {
   height: 50px;
-  padding: 10px 20px;
   color: #666;
   border-bottom: 2px solid #333;
   display: flex;
@@ -21,12 +20,83 @@
   width: auto;
 }
 
-.menu__bar-text {
+.open,
+.close {
+  cursor: pointer;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  right: 0;
+}
+
+.open:hover {
+  background-color: #88cc33;
+}
+
+.close {
+  display: none;
+  color: #88cc33;
+
+  &:hover {
+    background-color: #88cc33;
+    color: #666;
+  }
+}
+
+.menu__bar-text-open,
+.menu__bar-text-close {
   margin-right: 10px;
 }
 
-.menu__bar-icon-menu {
-  .icon-menu {
-    font-size: 20px;
+.icon-cross {
+  font-size: 10px;
+}
+
+.menu__checkbox {
+  display: none;
+
+  &:checked + .menu__bar .close {
+    display: flex;
   }
+  &:checked + .menu__bar .open {
+    display: none;
+  }
+
+  &:checked ~ .menu__content {
+    display: block;
+  }
+}
+
+.menu__content {
+  display: none;
+  padding: 40px 0 20px;
+  background-color: #fafafa;
+  height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.menu__content-image {
+  width: 208px;
+  margin: 0 auto 40px auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.menu__icons > i[class^="icon-"] {
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+  background-color: #88cc33;
+  margin-right: 3px;
+
+  &:hover {
+    background-color: #666;
+  }
+}
+
+.menu__icons > i.icon-twitter {
+  margin-right: 0;
 }
