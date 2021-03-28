@@ -31,6 +31,10 @@
   right: 0;
 }
 
+label[for="meniu"] {
+  cursor: pointer;
+}
+
 .open:hover {
   background-color: #88cc33;
 }
@@ -48,24 +52,31 @@
 .menu__bar-text-open,
 .menu__bar-text-close {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .icon-cross {
   font-size: 10px;
+  cursor: pointer;
 }
 
 .menu__checkbox {
   display: none;
 
-  &:checked + .menu__bar .close {
+  &:checked + .content .menu__bar .close {
     display: flex;
   }
-  &:checked + .menu__bar .open {
+
+  &:checked + .content .menu__bar .open {
     display: none;
   }
 
-  &:checked ~ .menu__content {
+  &:checked + .content .menu__content {
     display: block;
+  }
+
+  &:checked + .content {
+    overflow: hidden;
   }
 }
 
