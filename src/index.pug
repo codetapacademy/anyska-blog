@@ -1,4 +1,19 @@
-extends _component/layout/base
-
-block awesome-content
-  include _component/intro/intro
+doctype html
+html(lang="en")
+  head
+    title Anyska's beauty diary - Grab a cup of tea and let's chat beauty, shall we? 
+    meta(content="Anyska's Blog! &#8211; Anyska's Blog! &#8211; is super awesome" name="description")
+    meta(
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    )
+    link(rel="stylesheet", href="style.css")
+  body
+    input.menu__checkbox(
+      type="checkbox"
+      id="meniu"
+    )
+    .content
+      .grid 
+        include _component/home-page/home-page.pug
+        include _component/menu/menu.pug

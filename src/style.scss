@@ -1,2 +1,8 @@
-@import '_component/layout/general';
-@import '_component/intro/intro';
+@import '_component/config/reusable';
+@import "_component/config/font-family";
+@import "_component/layout/general";
+@import "_component/home-page/home-page";
+@import "_component/menu/menu";
+@import "_component/article/article";
+@import "_component/config/desktop";
+@import "_asset/font/style"

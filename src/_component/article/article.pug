@@ -1,0 +1,16 @@
+.articles-wrapper 
+  each article in data.content.articles
+    .article 
+      .article-title
+        a(href=`${article.link}`)=article.title 
+      .article-details 
+        a.article-date(href=`${article.link}`)=article.date
+        br
+        span.article-posted Posted in&nbsp
+        a.article-category(href=`${article.link}`)=article.category
+      .article-description
+        span=article.description 
+        span
+          a(href=`${article.link}`) Continue reading
+      if (article.imagePath!=="")
+        img(src=`${article.imagePath}`, alt="" width="100%").article-image

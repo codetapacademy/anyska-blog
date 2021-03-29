@@ -1,0 +1,41 @@
+.article {
+  padding: 40px 20px 0;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  margin-left: -19px;
+  margin-right: -19px;
+}
+
+.article-title {
+  a {
+    @extend %title;
+  }
+}
+
+.article-details {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+
+  .article-date,
+  .article-category {
+    color: #88cc33;
+  }
+
+  .article-posted {
+    color: #aaa;
+  }
+}
+
+.article-description {
+  margin: 58px 0;
+  font-size: 20px;
+  color: #666;
+  a {
+    color: #88cc33;
+  }
+}
+
+.article-image {
+  margin-bottom: 58px;
+}

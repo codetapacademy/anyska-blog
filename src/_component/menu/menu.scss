@@ -1,0 +1,113 @@
+.menu {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  width: 100%;
+}
+
+.menu__bar {
+  height: 50px;
+  color: #666;
+  border-bottom: 2px solid #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: auto;
+}
+
+.open,
+.close {
+  cursor: pointer;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  right: 0;
+}
+
+label[for="meniu"] {
+  cursor: pointer;
+}
+
+.open:hover {
+  background-color: #88cc33;
+}
+
+.close {
+  display: none;
+  color: #88cc33;
+
+  &:hover {
+    background-color: #88cc33;
+    color: #666;
+  }
+}
+
+.menu__bar-text-open,
+.menu__bar-text-close {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.icon-cross {
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.menu__checkbox {
+  display: none;
+
+  &:checked + .content .menu__bar .close {
+    display: flex;
+  }
+
+  &:checked + .content .menu__bar .open {
+    display: none;
+  }
+
+  &:checked + .content .menu__content {
+    display: block;
+  }
+
+  &:checked + .content {
+    overflow: hidden;
+  }
+}
+
+.menu__content {
+  display: none;
+  padding: 40px 0 20px;
+  background-color: #fafafa;
+  height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.menu__content-image {
+  width: 208px;
+  margin: 0 auto 40px auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.menu__icons > i[class^="icon-"] {
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+  background-color: #88cc33;
+  margin-right: 3px;
+
+  &:hover {
+    background-color: #666;
+  }
+}
+
+.menu__icons > i.icon-twitter {
+  margin-right: 0;
+}
